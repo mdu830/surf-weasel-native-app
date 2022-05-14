@@ -20,7 +20,8 @@
  } from 'react-native/Libraries/NewAppScreen';
  
  
- const HomeScreen = () => {
+ export default HomeScreen = () => {
+     
    const isDarkMode = useColorScheme() === 'dark';
  
    const backgroundStyle = {
@@ -48,17 +49,15 @@
  
    return (
      <SafeAreaView style={backgroundStyle}>
-       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+       <StatusBar barStyle={'dark-content'} />
        <ScrollView
          contentInsetAdjustmentBehavior="automatic"
          style={backgroundStyle}>
          <Header />
-         <View
-           style={{ backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
+         <View style={{ backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
+
          </View>
        </ScrollView>
      </SafeAreaView>
    );
  };
- 
- export default HomeScreen;
