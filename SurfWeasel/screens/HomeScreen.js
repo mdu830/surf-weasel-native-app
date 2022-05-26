@@ -8,12 +8,12 @@ import {
     View,
 } from 'react-native';
 
-import {
-    Colors,
-    Header
-} from 'react-native/Libraries/NewAppScreen';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 
-const styles = require('./style');
+import Header from '../components/header/Header'
+import Carousel from '../components/carousel/Carousel';
+import SearchBar from '../components/searchBar/SearchBar'
+const styles = require('../style');
 
 const HomeScreen = () => {
 
@@ -30,9 +30,9 @@ const HomeScreen = () => {
                 contentInsetAdjustmentBehavior="automatic"
                 style={backgroundStyle}>
                 <Header />
-                <View style={{ backgroundColor: isDarkMode ? Colors.black : Colors.white }}>
-                </View>
-            </ScrollView>
+                <Carousel />
+                <SearchBar />
+                </ScrollView>
         </SafeAreaView>
     );
 };

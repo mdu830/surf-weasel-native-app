@@ -1,5 +1,7 @@
 'use strict';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, useColorScheme } from 'react-native';
+
+const isDarkMode = useColorScheme() === 'dark';
 
 module.exports = StyleSheet.create({
     sectionContainer: {
@@ -18,4 +20,12 @@ module.exports = StyleSheet.create({
     highlight: {
         fontWeight: '700',
     },
+    card: {
+        backgroundColor: 'white',
+        borderRadius: 8,
+        paddingVertical: 45,
+        paddingHorizontal: 25,
+        width: '100%',
+        marginVertical: 10,
+      },
 });
