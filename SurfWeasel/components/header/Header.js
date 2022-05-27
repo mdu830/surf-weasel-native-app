@@ -10,7 +10,7 @@ const styles = require('./style')
 const Header = () => {
     return(
         <View style={[styles.headerBar, styles.shadowProp]}>
-            <Text style={styles.headerTitle}>Welcome to Surf Weasel</Text>
+            <Text style={styles.headerTitle}>Surf Weasel</Text>
         </View>
     )
 }

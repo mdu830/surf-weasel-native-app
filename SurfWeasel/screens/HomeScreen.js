@@ -11,7 +11,7 @@ import {
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 import Header from '../components/header/Header'
-import Carousel from '../components/carousel/Carousel';
+import InfoCarousel from '../components/carousel/InfoCarousel';
 import SearchBar from '../components/searchBar/SearchBar'
 const styles = require('../style');
 
@@ -30,7 +30,7 @@ const HomeScreen = () => {
                 contentInsetAdjustmentBehavior="automatic"
                 style={backgroundStyle}>
                 <Header />
-                <Carousel />
+                <InfoCarousel />
                 <SearchBar />
                 </ScrollView>
         </SafeAreaView>

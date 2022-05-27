@@ -6,7 +6,7 @@ const isDarkMode = useColorScheme() === 'dark';
 module.exports = StyleSheet.create({
     headerBar: {
         backgroundColor: isDarkMode ? 'dark-grey' : 'white',
-        paddingVertical: 45,
+        paddingVertical: 15,
         paddingHorizontal: 25,
         width: '100%',
         marginVertical: 10,
