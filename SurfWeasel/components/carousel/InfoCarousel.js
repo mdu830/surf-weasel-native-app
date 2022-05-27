@@ -1,23 +1,27 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { View, Text, Image } from 'react-native';
 import { FlatListSlider } from 'react-native-flatlist-slider';
+import Slide from './lib/slide'
 
 
 
-const styles = require('./style')
+const styles = require('./lib/style')
 
 const images = [
     {
-        banner: require('./images/waveOrange.jpeg'),
-        desc: 'something',
+        banner: require('./lib/images/waveOrange.jpeg'),
+        title: 'Welcome to Surf Weasel',
+        desc: 'The best app to get your surf report and cams'
     },
     {
-        banner: require('./images/waveBlue.jpeg'),
-        desc: 'something',
+        banner: require('./lib/images/waveBlue.jpeg'),
+        title: 'this app is not functional', 
+        desc: 'We will have it up and running soon!',
     },
     {
-        banner: require('./images/waveGreen.jpeg'),
-        desc: 'something',
+        banner: require('./lib/images/waveGreen.jpeg'),
+        title: 'Insert Ad here',
+        desc: 'Would you like to advertise?',
     },
 ]
 
@@ -33,8 +37,8 @@ const InfoCarousel = () => {
                 indicatorActiveWidth={20}
                 indicatorInActiveColor={'white'}
                 indicatorActiveColor={'white'}
-                indicatorContainerStyle={{position:'absolute', bottom: 20}}
-                // component={<Text>text</Text>}
+                indicatorContainerStyle={{ position: 'absolute', bottom: 20 }}
+                component={<Slide/>}
                 local
             />
         </View>
